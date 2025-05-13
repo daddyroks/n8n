@@ -1,8 +1,8 @@
-FROM n8nio/n8n:1.92.0-root
+FROM n8nio/n8n:latest
 
 USER root
 
-# Install LangChain nodes
+# Install LangChain community nodes
 RUN npm install -g n8n-nodes-langchain
 
 WORKDIR /home/node
